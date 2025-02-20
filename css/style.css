@@ -1,0 +1,13 @@
+.my-pic{
+    max-height: 100%;
+    width: 50%;
+}
+
+.publication-pic{
+    max-height: 100%;
+    width: 100%;
+}
+
+.shadow-light{
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
+}

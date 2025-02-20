@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello world!</title>
+    <link rel="icon" type="image/x-icon" href="./resrc/moon-fill.svg">
+
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+</head>
+
+<body class="bg-light">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark shadow-light ps-5 pe-5">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bolder fs-4" href="#"> Kyungjune Baek </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
+          <a class="nav-link fw-bold" href="#">About</a>
+          <a class="nav-link fw-bold" href="#publication">Publication</a>
+          <button class="btn btn-sm btn-outline-info" type="button" onclick="toggleDark()" style="border: none;">☾</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- style="width: 70%;" -->
+  <div class="container-fluid mt-5" style="width: 80%;">
+
+    <div class="row">
+      <div class="col-sm-3">
+
+        <div class="row justify-content-center g-1">
+          <img class="my-pic img-thumbnail" src="./resrc/bkj.jpg" alt="">
+        </div>
+
+        <div class="row text-center mt-3 g-0">
+          <h5 class="fw-bold">Kyungjune Baek</h5>
+          <h6>Assistant Professor (Incoming)</h6>
+          <strong class="small">
+            <p>
+              Dept. of Software <br>
+              Sejong Univ.
+            </p>
+          </strong>
+          <!-- <h6>Department of Software</h6>
+          <h6></h6> -->
+        </div>
+        
+        <div class="text-center mt-2 mb-3">
+
+          <a class="me-2" href="https://github.com/FriedRonaldo" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+            <i class="bi-github" role="img" aria-label="GitHub" style="font-size: 2rem; color: cornflowerblue;"></i>
+          </a>
+  
+          <a class="me-2" href="https://scholar.google.com/citations?user=jC6P1pQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+            <i class="bi-google" role="img" aria-label="GitHub" style="font-size: 2rem; color: cornflowerblue;"></i>
+          </a>
+          
+          <a class="me-2" href="https://github.com/FriedRonaldo" target="_blank" rel="noopener noreferrer"  style="text-decoration: none;">
+            <i class="bi-house-fill" role="img" aria-label="GitHub" style="font-size: 2rem; color: cornflowerblue;"></i>
+          </a>
+        </div>
+
+        <div class="text-center mb-3">
+          <a type="button" class="btn btn-sm btn-outline-info" href="./resrc/KyungjuneBaek_CV.pdf" download>
+            Download CV
+          </a>
+        </div>
+
+      </div>
+
+      <div class="col-sm">
+        <div class="row g-0">
+          Please contact me for the detailed information. 
+          <div class="mt-2">
+            <button type="button" class="btn btn-sm btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="right" title="Click to copy e-mail" onclick="copy()">
+              kyungjune23@gmail.com
+            </button>
+          </div>
+
+        </div>
+
+        <div class="row mt-4 g-0">
+          <h5 class="fw-bold">Interests</h5>
+          <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '|';">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"></li>
+              <li class="breadcrumb-item">Generative models</li>
+              <li class="breadcrumb-item">Representation learning</li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="row mt-4 g-0">
+          <div class="col-sm g-0">
+            <h5 class="fw-bold">Experience</h5>
+
+            <div class="row mb-2">
+                <div class="col-1 me-1">
+                  &#x1F3AF;
+                </div>
+                <div class="col small">
+                  <div class="row">
+                    <strong class="px-0">Assistant Professor</strong> 
+                  </div>
+                  <div class="row ">
+                    Sejong University
+                  </div>
+                  <div class="row ">
+                    Department of Software
+                  </div>
+                  <div class="row ">
+                    2025.03 ~ (Expected)
+                  </div>
+                </div>
+              </div>
+
+            <div class="row mb-2">
+                <div class="col-1 me-1">
+                  &#x1F3AF;
+                </div>
+                <div class="col small text-muted">
+                  <div class="row">
+                    <strong class="px-0">ML Research Scientist</strong> 
+                  </div>
+                  <div class="row ">
+                    TwelveLabs 
+                  </div>
+                  <div class="row ">
+                    Video Foundation Model
+                  </div>
+                  <div class="row ">
+                    2024.03 ~ 2025.02 (Expected)
+                  </div>
+                </div>
+              </div>
+
+            <div class="row mb-2">
+              <div class="col-1 me-1">
+                &#x1F3AF;
+              </div>
+              <div class="col small text-muted">
+                <div class="row">
+                  <strong class="px-0">AI Research Engineer</strong> 
+                </div>
+                <div class="row ">
+                  Upstage 
+                </div>
+                <div class="row ">
+                  OCR / Synthetic Dataset
+                </div>
+                <div class="row ">
+                  2023.03 ~ 2024.02 
+                </div>
+              </div>
+            </div>
+              
+            <div class="row mb-2">
+              <div class="col-1 me-1">
+                &#x1F3AF;
+              </div>
+              <div class="col small text-muted">
+                <div class="row">
+                  <strong class="px-0">Visiting researcher</strong> 
+                </div>
+                <div class="row ">
+                  Clova AI Research (CLAIR), Naver Corp. 
+                </div>
+                <div class="row ">
+                  Image-to-Image translation
+                </div>
+                <div class="row ">
+                  2019.09 ~ 2020.02 
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-2">
+              <div class="col-1 me-1">
+                &#x1F3AF;
+              </div>
+              <div class="col small text-muted">
+                <div class="row">
+                  <strong class="px-0">Development</strong> 
+                </div>
+                <div class="row ">
+                  SIT, Yonsei Univ. 
+                </div>
+                <div class="row ">
+                  Real time remote lecture room system construction 
+                </div>
+                <div class="row ">
+                  2018.09 ~ 2019.02 
+                </div>
+              </div>
+            </div>
+
+          </div>
+    
+          <div class="col-sm g-0">
+            <h5 class="fw-bold">Education</h5>
+
+
+            <div class="row mb-2">
+              <div class="col-1 me-1">
+                &#127891;
+              </div>
+              <div class="col text-muted small">
+                <div class="row">
+                  <strong class="px-0">Ph.D.</strong> 
+                </div>
+                <div class="row ">
+                  Yonsei Univ.
+                </div>
+                <div class="row ">
+                  Integrated Technology <br>
+                  (Advisor: Prof. Hyunjung Shim, <br>
+                  Dissertation: "Data-Efficient Learning for Generative Adversarial Networks")
+                </div>
+                <div class="row ">
+                  2018.03 ~ 2023.02
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-1 me-1">
+                &#127891;
+              </div>
+              <div class="col text-muted small">
+                <div class="row">
+                  <strong class="px-0">B.S.</strong> 
+                </div>
+                <div class="row">
+                  Yonsei Univ.
+                </div>
+                <div class="row">
+                  Electrical & Electronic Eng. and Computer Science 
+                </div>
+                <div class="row">
+                  2014.03 ~ 2018.02 
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row mt-4 g-0">
+
+          <div class="col-sm g-0">
+            <h5 class="fw-bold">Service</h5>
+            
+            <div class="row mb-2">
+              <div class="col-1 me-1">
+                &#x1F3AF;
+              </div>
+              <div class="col small">
+                <div class="row">
+                  <strong class="px-0">Reviewer</strong> 
+                </div>
+                <div class="row ">
+                  CVPR, ECCV, IJCAI, IJCV, TCSVT, ICML-Workshop-SSL, Neurips-Workshop-SSL, ICPR, WACV ...
+                </div>
+              </div>
+            </div>          
+          </div>
+
+          <div class="col-sm g-0">
+            <!--Buffer-->
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-sm-3 text-center">
+        <h3 id="publication">Publication</h3>
+        <button id="controlAll" class="btn btn-outline-danger w-50 mb-1" target="#TUNIT,#GridMix,#PsyNet,#EditableGAN,#Synth,#NoisyDistill,#LogitMix" type="button" onclick="changeButtonText(this.getAttribute('target'))">
+          Open All
+        </button>
+      </div>
+
+      <div class="col-sm">
+        <div class="row">
+            <hr>
+            <h5><strong>TWLV-I: Analysis and Insights from Holistic Evaluation on Video Foundation Models</strong></h5>
+            <p>TwelveLabs Research Science Team (* Co-First Author)<br>
+              Tech Report <br>
+              <a class="btn btn-sm btn-outline-danger mt-2" href="https://arxiv.org/abs/2408.11318" target="_blank" rel="noopener noreferrer">PDF</a>
+              <button class="btn btn-sm btn-outline-info mt-2" id="ctr-synth" type="button" data-bs-toggle="collapse" data-bs-target="#VFM" aria-expanded="true" aria-controls="VFM">View more</button>
+            </p>
+            <div class="collapse mb-1" id="VFM">
+              <div class="card card-body bg-dark">
+    
+                <div class="row">
+
+                </div>
+    
+              </div>
+            </div>
+          </div>
+
+        <div class="row">
+          <hr>
+          <h5><strong>Logit Mixing Training for More Reliable and Accurate Prediction</strong></h5>
+          <p>Duhyeon Bang*, <strong>Kyungjune Baek*</strong>, Jiwoo Kim, Yunho Jeon, Jin-Hwa Kim, Jiwon Kim, Jongwuk Lee, Hyunjung Shim (* indicates an equal contribution)<br>
+            IJCAI 2022 <br>
+            <a class="btn btn-sm btn-outline-danger mt-2" href="" target="_blank" rel="noopener noreferrer">PDF</a>
+            <button class="btn btn-sm btn-outline-info mt-2" id="ctr-synth" type="button" data-bs-toggle="collapse" data-bs-target="#LogitMix" aria-expanded="true" aria-controls="LogitMix">View more</button>
+          </p>
+          <div class="collapse mb-1" id="LogitMix">
+            <div class="card card-body bg-dark">
+  
+              <div class="row">
+                <div class="col-sm-4">
+                  <img class="publication-pic" src="./resrc/LogitMix.png" alt="">
+                </div>
+                
+                <div class="col-sm">
+                  <p>Proposing to utilize mixed logits for regularizing a classification model</p>
+                  <p>International Joint Conference on Artificial Intelligence (IJCAI), 2022</p>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+          <hr>
+        </div>
+          
+        <div class="row">
+          <h5><strong>Commonality in Natural Images Rescues GANs: Pretraining GANs with Generic and Privacy-free Synthetic Data</strong></h5>
+          <p><strong>Kyungjune Baek</strong>, Hyunjung Shim <br>
+            CVPR 2022 <br>
+            <a class="btn btn-sm btn-outline-danger mt-2" href="https://arxiv.org/abs/2204.04950" target="_blank" rel="noopener noreferrer">PDF</a>
+            <button class="btn btn-sm btn-outline-info mt-2" id="ctr-synth" type="button" data-bs-toggle="collapse" data-bs-target="#Synth" aria-expanded="true" aria-controls="Synth">View more</button>
+          </p>
+          <div class="collapse mb-1" id="Synth">
+            <div class="card card-body bg-dark">
+  
+              <div class="row">
+                <div class="col-sm-4">
+                  <img class="publication-pic" src="./resrc/synth.png" alt="">
+                </div>
+                
+                <div class="col-sm">
+                  <p>Proposing to utilize a synthetic pretraining dataset for low-shot generation of GANs</p>
+                  <p>Computer Vision and Pattern Recognition (CVPR), 2022</p>
+                  <a class="btn btn-sm btn-outline-info" href="https://github.com/FriedRonaldo/Primitives-PS" target="_blank" rel="noopener noreferrer">Code</a>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+          <hr>
+        </div>
+
+        <div class="row">
+          <h5><strong>Rethinking the Truly Unsupervised Image-to-Image Translation</strong></h5>
+          <p><strong>Kyungjune Baek</strong>, Yunjey Choi, Youngjung Uh, Jaejun Yoo, Hyunjung Shim <br>
+            ICCV 2021 <br>
+            <a class="btn btn-sm btn-outline-danger mt-2" href="https://arxiv.org/abs/2006.06500" target="_blank" rel="noopener noreferrer">PDF</a>
+            <button class="btn btn-sm btn-outline-info mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#TUNIT" aria-expanded="true" aria-controls="TUNIT">View more</button>
+          </p>
+
+          <div class="collapse mb-1" id="TUNIT">
+            <div class="card card-body bg-dark">
+
+              <div class="row">
+                <div class="col-sm-4">
+                  <img class="publication-pic" src="./resrc/tunit.png" alt="">
+                </div>
+                
+                <div class="col-sm">
+                  <p>Unsupervised image-to-image translation even without domain labels.</p>
+                  <p>International Conference on Computer Vision (ICCV), 2021</p>
+                  <a class="btn btn-sm btn-outline-info" href="https://github.com/clovaai/tunit" target="_blank" rel="noopener noreferrer">Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+        </div>
+
+        <div class="row">
+          <h5><strong>GridMix: Strong Regularization Through Local Context Mapping</strong></h5>
+          <p><strong>Kyungjune Baek*</strong>, Duhyeon Bang*, Hyunjung Shim (* indicates an equal contribution)<br>
+            PR 2021 <br>
+            <a class="btn btn-sm btn-outline-danger mt-2" href="https://www.sciencedirect.com/science/article/pii/S0031320320303976" target="_blank" rel="noopener noreferrer">PDF</a>
+            <button class="btn btn-sm btn-outline-info mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#GridMix" aria-expanded="true" aria-controls="GridMix">View more</button>
+          </p>
+
+          <div class="collapse mb-1" id="GridMix">
+            <div class="card card-body bg-dark">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img class="publication-pic" src="./resrc/gridmix.png" alt="">
+                </div>
+                
+                <div class="col-sm">
+                  <p>Regularization based on mixing samples at the level of patches.</p>
+                  <p>Pattern Recognition (PR, IF=7.196), 2021</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+        </div>
+
+        <div class="row">
+          <h5><strong>PsyNet: Self-Supervised Approach to Object Localization Using Point Symmetric Transformation</strong></h5>
+          <p><strong>Kyungjune Baek*</strong>, Minhyun Lee*, Hyunjung Shim (* indicates an equal contribution)<br>
+            AAAI 2020 <br>
+            <a class="btn btn-sm btn-outline-danger mt-2" href="https://ojs.aaai.org/index.php/AAAI/article/view/6615" target="_blank" rel="noopener noreferrer">PDF</a>
+            <button class="btn btn-sm btn-outline-info mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#PsyNet" aria-expanded="true" aria-controls="PsyNet">View more</button>
+          </p>
+
+          <div class="collapse mb-1" id="PsyNet">
+            <div class="card card-body bg-dark">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img class="publication-pic" src="./resrc/psynet.png" alt="">
+                </div>
+                
+                <div class="col-sm">
+                  <p>Self-supervised approach to co-localization problem.</p>
+                  <p>AAAI Conference on Artificial Intelligence (AAAI), 2020</p>
+                  <a class="btn btn-sm btn-outline-info" href="https://github.com/FriedRonaldo/PsyNet" target="_blank" rel="noopener noreferrer">Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+        </div>
+
+        <div class="row">
+          <h5><strong>Learning from Better Supervision: Self-distillation for Learning with Noisy Labels</strong></h5>
+          <p><strong>Kyungjune Baek*</strong>, Seungho Lee*, Hyunjung Shim (* indicates an equal contribution)<br>
+            ICPR 2022 <br>
+            <a class="btn btn-sm btn-outline-danger mt-2" href="" target="_blank" rel="noopener noreferrer">PDF</a>
+            <button class="btn btn-sm btn-outline-info mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#NoisyDistill" aria-expanded="true" aria-controls="NoisyDistill">View more</button>
+          </p>
+
+          <div class="collapse mb-1" id="NoisyDistill">
+            <div class="card card-body bg-dark">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img class="publication-pic" src="./resrc/noisydistill.png" alt="">
+                </div>
+                
+                <div class="col-sm">
+                  <p>Improving a classifier with the knowledge distillation against noisy labels.</p>
+                  <p>International Conference on Pattern Recognition (ICPR), 2022</p>
+                  <a class="btn btn-sm btn-outline-info" href="" target="_blank" rel="noopener noreferrer">Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+        </div>
+
+        <div class="row">
+          <h5><strong>Editable Generative Adversarial Networks: Generating and Editing Faces Simultaneously</strong></h5>
+          <p><strong>Kyungjune Baek</strong>, Duhyeon Bang, Hyunjung Shim<br>
+            ACCV 2018 <br>
+            <a class="btn btn-sm btn-outline-danger mt-2" href="https://arxiv.org/abs/1807.07700" target="_blank" rel="noopener noreferrer">PDF</a>
+            <button class="btn btn-sm btn-outline-info mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#EditableGAN" aria-expanded="true" aria-controls="EditableGAN">View more</button>
+          </p>
+
+          <div class="collapse mb-1" id="EditableGAN">
+            <div class="card card-body bg-dark">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img class="publication-pic" src="./resrc/editablegan.png" alt="">
+                </div>
+                
+                <div class="col-sm">
+                  <p>Attribute editing based on the inversion of the latent space of GANs.</p>
+                  <p>Asian Conference on Computer Vision (ACCV), 2018 <br> 
+                  Oral presentation (Best paper Runner-up)</p>
+                  <a class="btn btn-sm btn-outline-info" href="https://github.com/FriedRonaldo/EditableGAN" target="_blank" rel="noopener noreferrer">Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="./js/jquery-latest.js"></script> 
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.js"></script>
+  <script>
+    function changeButtonText(ids){
+      txt = document.getElementById("controlAll").innerText;
+      if (txt == "Close All"){
+        ids = ids.replaceAll('#', '').split(',')
+        for (id in ids){
+          if ($('#'+ids[id]).is( ":visible" )){
+            $('#'+ids[id]).collapse("toggle");
+          }
+        }
+        document.getElementById("controlAll").innerText = "Open All";
+      }
+      else{
+        ids = ids.replaceAll('#', '').split(',')
+        for (id in ids){
+          if ($('#'+ids[id]).is( ":hidden" )){
+            $('#'+ids[id]).collapse("toggle");
+          }
+        }
+        document.getElementById("controlAll").innerText = "Close All";
+      }
+    }
+
+    function copyToClipboard(val) {
+      const t = document.createElement("textarea");
+      document.body.appendChild(t);
+      t.value = val;
+      t.select();
+      document.execCommand('copy');
+      document.body.removeChild(t);
+    }
+    function copy() {
+      copyToClipboard('kyungjune23@gmail.com');
+    }
+  </script>
+
+  <script>
+    function toggleDark(){
+      elmts_dark = document.getElementsByClassName("bg-dark");
+      if (elmts_dark.length <= 1){
+        elmts_light = document.getElementsByClassName("bg-light");
+        for (e=0;e<elmts_light.length;){
+          elmts_light[e].classList.add("text-white");
+          elmts_light[e].classList.add("bg-dark");
+          elmts_light[e].classList.remove("bg-light");
+        }
+      }
+      else{
+      for (e=0;e<elmts_dark.length;){
+        if (elmts_dark[e].classList.contains("navbar")){
+          e++;
+          continue;
+        }
+        elmts_dark[e].classList.add("bg-light");
+        elmts_dark[e].classList.remove("text-white");
+        elmts_dark[e].classList.remove("bg-dark");
+      }
+    }
+
+    }
+  </script>
+
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+
+</body>
+</html>
